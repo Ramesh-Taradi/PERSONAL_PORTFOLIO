@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMESH T - Java Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css?v=6.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Scroll Progress Bar -->
+    <div id="scroll-progress-bar"></div>
+
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        
+        <!-- SVG Filter for Gooey Nav -->
+        <svg width="0" height="0" style="position: absolute;">
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="over"/>
+            </filter>
+        </svg>
+        
+ 
+        <nav class="glassmorphic-nav">
+            <a href="#hero" class="site-logo">RAMESH T</a>
+            
+            <div class="nav-links-wrapper">
+                <ul class="nav-links">
+                    <div class="nav-indicator"></div>
+ 
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+ 
+            <a href="#contact" class="btn get-in-touch-btn" style="padding: 10px 24px; font-size: 0.95rem; border-radius: 25px; background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%); color: #fff; font-weight: bold; border: none;">Get In Touch</a>
+        </nav>
+    </header>
+ 
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div id="orb-canvas-container" class="orb-container"></div>
+        <div class="portfolio-container hero-content">
+            <div class="portfolio-text-section">
+                <h1>Hi, I'm</h1>
+                <h2 class="hero-name reveal-text">RAMESH</h2>
+                <h3 class="hero-title reveal-text">Full Stack Java Developer</h3>
+                <p class="hero-tagline reveal-text">
+                    Passionate about building robust web applications with modern technologies.
+                    I specialize in crafting scalable, efficient, and user-centric digital experiences.
+                </p>
+                <div class="hero-ctas reveal-buttons">
+                    <a href="#projects" class="btn glassmorphic-btn">Explore My Work</a>
+                    <a href="#contact" class="btn glassmorphic-btn">Let's Connect</a>
+                </div>
+            </div>
+ 
+            <div class="code-editor-section">
+                <div class="code-editor-header">
+                    <div class="traffic-lights">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                    <div class="editor-title">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" class="title-icon" alt="Java">
+                        <span class="file-name">Ramesh.java</span>
+                    </div>
+                    <div class="editor-actions">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                    </div>
+                </div>
+                <pre class="code-editor-content"><code>
+<span class="code-line"><span class="keyword">public class</span> <span class="property">Ramesh</span> {</span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="keyword">String</span> role <span class="operator">=</span> <span class="string">"Java full-stack developer"</span>;</span>
+<span class="code-line">    <span class="keyword">String</span>[] skills <span class="operator">=</span> {<span class="string">"Java"</span>, <span class="string">"Spring Boot"</span>, <span class="string">"React"</span>};</span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="keyword">public void</span> <span class="property">execute</span>() {</span>
+<span class="code-line">        <span class="property">System</span>.out.println(<span class="string">"Building scalable digital solutions..."</span>);</span>
+<span class="code-line">        <span class="property">System</span>.out.println(<span class="string">"500+ days LeetCode streak"</span>);</span>
+<span class="code-line">    }</span>
+<span class="code-line">}</span>
+                </code></pre>
+                <div class="code-editor-footer">
+                    <span class="footer-text">UTF-8</span>
+                    <button class="editor-download-btn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                    </button>
+                    <span class="footer-text">Java</span>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- About Me Section -->
+    <section id="about" class="about-section content-section glassmorphic-panel">
+        <div class="container">
+            <h2 class="section-heading">About Me & My Journey</h2>
+            <div class="about-content">
+                <div class="about-text reveal-left">
+                    <p>Greetings! I'm Ramesh T, a dedicated Java Full-Stack Developer with a profound passion for engineering robust and intuitive digital solutions. My journey is fueled by a desire to bridge complex backend logic with seamless frontend experiences, crafting applications that are both powerful and a joy to use. With a strong foundation in Java, Spring Boot, and Hibernate, complemented by modern web technologies like React, I excel at transforming intricate requirements into scalable, high-performance systems. I am driven by the continuous evolution of technology and committed to building innovative products that make a tangible impact.</p>
+                    <h3>My Core Professional Values:</h3>
+                    <ul>
+                        <li><strong>Crafting Excellence:</strong> A commitment to writing clean, maintainable, and efficient code that stands the test of time, ensuring both reliability and scalability.</li>
+                        <li><strong>User-Centric Innovation:</strong> Driven by the belief that technology should serve people, always striving to build intuitive interfaces and responsive experiences that genuinely delight users.</li>
+                        <li><strong>Continuous Evolution:</strong> Dedicated to lifelong learning and embracing new technologies, frameworks, and best practices to deliver cutting-edge solutions.</li>
+                    </ul>
+                    <a href="#" class="btn glassmorphic-btn download-resume-btn">Download My Resume</a>
+                </div>
+                <!-- Interactive 3D Spatial Video Profile Stage -->
+                <div class="about-3d-stage reveal-right">
+                    <!-- Background ambient rotating aura glow -->
+                    <div class="stage-aura-glow"></div>
+                    
+                    <!-- 3D Holographic Video Card -->
+                    <div class="about-3d-card" id="about-3d-card">
+                        <!-- Holographic Status Bar -->
+                        <div class="card-video-topbar">
+                            <span class="live-rec-badge"><span class="rec-pulse-dot"></span> LIVE 3D</span>
+                            <span class="spatial-tag"><i class="fas fa-cube"></i> SPATIAL VIEW</span>
+                        </div>
+
+                        <!-- Portrait Image Wrapper with Hologram Layer -->
+                        <div class="profile-img-frame">
+                            <img src="images/ramesh_profile_hd.png" alt="Ramesh T - Full Stack Java Developer" class="profile-3d-img">
+                            <div class="hologram-scanline"></div>
+                            <div class="profile-depth-overlay"></div>
+                        </div>
+
+                        <!-- Floating Parallax 3D Badges -->
+                        <div class="floating-badge badge-top-left">
+                            <i class="fab fa-java"></i>
+                            <span>Java Full-Stack</span>
+                        </div>
+                        <div class="floating-badge badge-mid-right">
+                            <i class="fas fa-fire"></i>
+                            <span>500+ LeetCode</span>
+                        </div>
+                        <div class="floating-badge badge-bottom-left">
+                            <i class="fas fa-leaf"></i>
+                            <span>Spring & React</span>
+                        </div>
+
+                        <!-- Dynamic Timeline Controller Bar -->
+                        <div class="card-video-footer">
+                            <div class="video-progress-track">
+                                <div class="video-progress-fill"></div>
+                            </div>
+                            <div class="video-meta-row">
+                                <span class="meta-label"><i class="fas fa-play"></i> DYNAMIC 3D CAM</span>
+                                <span class="meta-fps">60 FPS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section content-section">
+        <div class="container">
+            <h2 class="section-heading">My Skills</h2>
+            
+            <!-- Frontend Technologies -->
+            <div class="skill-category-group">
+                <h3 class="category-title">Frontend</h3>
+                <div class="skills-grid">
+                    <div class="skill-card border-react reveal-card">
+                        <div class="card-icon">
+                            <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React Logo">
+                        </div>
+                        <h3 class="skill-name">React</h3>
+                    </div>
+                    <div class="skill-card border-javascript reveal-card">
+                        <div class="card-icon">
+                            <img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript Logo">
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                    </div>
+                    <div class="skill-card border-html5 reveal-card">
+                        <div class="card-icon">
+                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML5 Logo">
+                        </div>
+                        <h3 class="skill-name">HTML5</h3>
+                    </div>
+                    <div class="skill-card border-css3 reveal-card">
+                        <div class="card-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3 Logo">
+                        </div>
+                        <h3 class="skill-name">CSS3</h3>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Backend Technologies -->
+            <div class="skill-category-group">
+                <h3 class="category-title">Backend</h3>
+                <div class="skills-grid">
+                    <div class="skill-card border-java reveal-card">
+                        <div class="card-icon">
+                            <img src="https://www.vectorlogo.zone/logos/java/java-icon.svg" alt="Java Logo">
+                        </div>
+                        <h3 class="skill-name">Java</h3>
+                    </div>
+                    <div class="skill-card border-spring reveal-card">
+                        <div class="card-icon">
+                            <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Spring Boot Logo">
+                        </div>
+                        <h3 class="skill-name">Spring Boot</h3>
+                    </div>
+                    <div class="skill-card border-hibernate reveal-card">
+                        <div class="card-icon">
+                            <img src="https://www.vectorlogo.zone/logos/hibernate/hibernate-icon.svg" alt="Hibernate Logo">
+                        </div>
+                        <h3 class="skill-name">Hibernate</h3>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Database Technologies -->
+            <div class="skill-category-group">
+                <h3 class="category-title">Database</h3>
+                <div class="skills-grid">
+                    <div class="skill-card border-mysql reveal-card">
+                        <div class="card-icon">
+                            <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL Logo">
+                        </div>
+                        <h3 class="skill-name">MySQL</h3>
+                    </div>
+                    <div class="skill-card border-oracle reveal-card">
+                        <div class="card-icon">
+                            <img src="https://www.vectorlogo.zone/logos/oracle/oracle-icon.svg" alt="Oracle Logo">
+                        </div>
+                        <h3 class="skill-name">Oracle</h3>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Tools -->
+            <div class="skill-category-group">
+                <h3 class="category-title">Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-card border-vscode reveal-card">
+                        <div class="card-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code Logo">
+                        </div>
+                        <h3 class="skill-name">VS Code</h3>
+                    </div>
+                    <div class="skill-card border-eclipse reveal-card">
+                        <div class="card-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" alt="Eclipse Logo">
+                        </div>
+                        <h3 class="skill-name">Eclipse</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section content-section">
+        <div class="container projects-container">
+            <!-- Section Header Block -->
+            <div class="projects-header-block">
+                <div class="handwritten-annotation note-top-left">
+                    <span>Turning<br>Ideas into<br>Real Products</span>
+                    <svg class="handwritten-arrow-svg arrow-tl" viewBox="0 0 45 40" fill="none">
+                        <path d="M8,6 Q32,8 28,30" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        <path d="M20,24 L28,32 L34,22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </div>
+
+                <div class="projects-badge-label">— MY WORK —</div>
+                <h2 class="section-heading projects-main-title">Featured Projects</h2>
+                <p class="section-subheading projects-subtitle">
+                    Building full-stack web applications that solve real-world problems with clean design, scalable architecture, and great user experiences.
+                </p>
+
+                <div class="handwritten-annotation note-top-right">
+                    <span>Code<br>Design<br>Develop<br>Deliver</span>
+                    <svg class="handwritten-arrow-svg arrow-tr" viewBox="0 0 45 40" fill="none">
+                        <path d="M12,32 Q22,8 38,10" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        <path d="M30,4 L38,10 L30,17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- StayNest Project Card (Card 1) -->
+                <div class="project-showcase-card project-card card-staynest reveal-card">
+                    <!-- Card Top Bar -->
+                    <div class="card-top-bar">
+                        <div class="card-badge-group">
+                            <span class="card-num-badge staynest-num">01</span>
+                            <span class="card-type-badge staynest-type">Full Stack Project</span>
+                        </div>
+                        <div class="card-year">
+                            <i class="far fa-calendar-alt"></i> 2026
+                        </div>
+                    </div>
+
+                    <!-- Project Banner Device Mockup -->
+                    <div class="project-banner-wrap">
+                        <img src="images/staynest_banner.jpg" alt="StayNest - Vacation Rental & Stay Booking Platform" class="project-banner-img">
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <!-- Header with Brand Icon -->
+                        <div class="card-title-row">
+                            <div class="brand-avatar staynest-avatar">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="brand-headings">
+                                <h3 class="card-project-title">StayNest</h3>
+                                <p class="card-project-sub">Vacation Rental & Stay Booking Platform</p>
+                            </div>
+                            <div class="handwritten-card-note staynest-note">
+                                <span>Explore<br>Book<br>Stay<br>Relax</span>
+                                <svg class="card-curve-arrow" viewBox="0 0 30 30" fill="none">
+                                    <path d="M6,6 Q24,9 18,23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+                                    <path d="M12,19 L18,24 L24,18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="card-description">
+                            StayNest is a full-stack accommodation booking platform designed to simplify property discovery and stay management. Users can browse available properties, search and filter listings, view property details, make bookings, and manage their booking history.
+                        </p>
+
+                        <!-- Tech Skills Stack -->
+                        <div class="card-tech-stack">
+                            <span class="skill-pill"><i class="fab fa-java java-color"></i> Java</span>
+                            <span class="skill-pill"><i class="fas fa-leaf spring-color"></i> Spring Boot</span>
+                            <span class="skill-pill"><i class="fab fa-react react-color"></i> React</span>
+                            <span class="skill-pill"><i class="fas fa-database mysql-color"></i> MySQL</span>
+                            <span class="skill-pill"><i class="fas fa-network-wired api-color"></i> REST API</span>
+                        </div>
+
+                        <!-- Features Checklist Grid -->
+                        <div class="features-checklist-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-search feature-icon staynest-icon-color"></i>
+                                <span>Property search & filtering</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt feature-icon staynest-icon-color"></i>
+                                <span>Secure authentication</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-calendar-check feature-icon staynest-icon-color"></i>
+                                <span>Booking management</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-home feature-icon staynest-icon-color"></i>
+                                <span>Property details & availability</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-laptop-code feature-icon staynest-icon-color"></i>
+                                <span>Responsive UI</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-history feature-icon staynest-icon-color"></i>
+                                <span>Booking history</span>
+                            </div>
+                        </div>
+
+                        <!-- Card Action Buttons -->
+                        <div class="card-actions">
+                            <a href="https://staynest-eeak.onrender.com" target="_blank" rel="noopener noreferrer" class="btn-action btn-staynest-view">
+                                <span>View Project</span> <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="https://github.com/Ramesh-Taradi/StayNest" target="_blank" rel="noopener noreferrer" class="btn-action btn-github-outline">
+                                <i class="fab fa-github"></i> <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PlateHop Project Card (Card 2) -->
+                <div class="project-showcase-card project-card card-platehop reveal-card">
+                    <!-- Card Top Bar -->
+                    <div class="card-top-bar">
+                        <div class="card-badge-group">
+                            <span class="card-num-badge platehop-num">02</span>
+                            <span class="card-type-badge platehop-type">Full Stack Project</span>
+                        </div>
+                        <div class="card-year">
+                            <i class="far fa-calendar-alt"></i> 2026
+                        </div>
+                    </div>
+
+                    <!-- Project Banner Device Mockup -->
+                    <div class="project-banner-wrap">
+                        <img src="images/platehop_banner.jpg" alt="PlateHop - Food Ordering & Restaurant Discovery Platform" class="project-banner-img">
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <!-- Header with Brand Icon -->
+                        <div class="card-title-row">
+                            <div class="brand-avatar platehop-avatar">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="brand-headings">
+                                <h3 class="card-project-title">PlateHop</h3>
+                                <p class="card-project-sub">Food Ordering & Restaurant Discovery Platform</p>
+                            </div>
+                            <div class="handwritten-card-note platehop-note">
+                                <span>Good Food<br>Brighter Days</span>
+                                <svg class="card-curve-arrow" viewBox="0 0 30 30" fill="none">
+                                    <path d="M6,6 Q24,9 18,23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+                                    <path d="M12,19 L18,24 L24,18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="card-description">
+                            PlateHop is a full-stack food ordering platform that allows users to explore restaurants, browse menus, add items to their cart, customize orders, and complete the checkout process through a smooth and responsive web experience.
+                        </p>
+
+                        <!-- Tech Skills Stack -->
+                        <div class="card-tech-stack">
+                            <span class="skill-pill"><i class="fab fa-java java-color"></i> Java</span>
+                            <span class="skill-pill"><i class="fas fa-leaf spring-color"></i> Spring Boot</span>
+                            <span class="skill-pill"><i class="fab fa-react react-color"></i> React</span>
+                            <span class="skill-pill"><i class="fas fa-database mysql-color"></i> MySQL</span>
+                            <span class="skill-pill"><i class="fas fa-network-wired api-color"></i> REST API</span>
+                        </div>
+
+                        <!-- Features Checklist Grid -->
+                        <div class="features-checklist-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-store feature-icon platehop-icon-color"></i>
+                                <span>Restaurant & food discovery</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-book-open feature-icon platehop-icon-color"></i>
+                                <span>Menu browsing</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shopping-cart feature-icon platehop-icon-color"></i>
+                                <span>Add to cart & quantity management</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-credit-card feature-icon platehop-icon-color"></i>
+                                <span>Checkout workflow</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-receipt feature-icon platehop-icon-color"></i>
+                                <span>Order management</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-mobile-alt feature-icon platehop-icon-color"></i>
+                                <span>Responsive design</span>
+                            </div>
+                        </div>
+
+                        <!-- Card Action Buttons -->
+                        <div class="card-actions">
+                            <a href="https://platehop.onrender.com" target="_blank" rel="noopener noreferrer" class="btn-action btn-platehop-view">
+                                <span>View Project</span> <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="https://github.com/Ramesh-Taradi/PlateHop" target="_blank" rel="noopener noreferrer" class="btn-action btn-github-outline">
+                                <i class="fab fa-github"></i> <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section content-section">
+        <div class="container">
+            <h2 class="section-heading">Let's Connect</h2>
+            <p class="contact-intro">I'm always excited to discuss new projects, innovative ideas, or opportunities to collaborate. Feel free to reach out—I'd love to hear from you!</p>
+            <div class="contact-content">
+                <form class="contact-form glassmorphic-panel">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required class="glassmorphic-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required class="glassmorphic-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required class="glassmorphic-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn glassmorphic-btn submit-btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Find me here:</h3>
+                    <p class="email-link">
+                        <a href="mailto:rameshtaradi126@gmail.com" class="glassmorphic-btn"><i class="fas fa-envelope"></i> rameshtaradi126@gmail.com</a>
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ramesh-taradi/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Ramesh-Taradi" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Floating Back to Top Button with Circular Progress Indicator -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top">
+        <svg class="progress-ring" width="50" height="50" viewBox="0 0 50 50">
+            <circle class="progress-ring-bg" cx="25" cy="25" r="21"></circle>
+            <circle class="progress-ring-circle" cx="25" cy="25" r="21"></circle>
+        </svg>
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> RAMESH T. All rights reserved.</p>
+        </div>
+    </footer>
+ 
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="script.js?v=5.0"></script>
+</body>
+</html>
