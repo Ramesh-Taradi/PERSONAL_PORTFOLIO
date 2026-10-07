@@ -3,7 +3,7 @@
 A modern, responsive portfolio website showcasing full-stack Java development projects, technical skills, and experience.
 
 ## 🚀 Live Demo
-- Portfolio: *(Coming soon on Vercel)*
+- **Live Portfolio**: [https://personalportfolio-ch15xiujf-rameshdev.vercel.app](https://personalportfolio-ch15xiujf-rameshdev.vercel.app/)
 
 ## 🛠️ Tech Stack
 - **Frontend**: HTML5, CSS3 (Modern Glassmorphic UI), JavaScript (ES6+), GSAP (GreenSock Animation Platform)
